@@ -15,12 +15,16 @@ class IncomeSeeder extends Seeder
     {
         $now = now();
         $data = [];
-        for ($i = 0; $i < 50; $i++) {
-            $data[] = [
-                'amount' => rand(50,100),
-                'created_at' => $now 
+  for($i=0;$i<=50; $i++){
+            $data[]=[
+                'amount' => rand(50,5000),
+                'created_at' => $now,
+                'updated_at' => $now,
             ];
         }
-        DB::table("incomes")->insert($data ? $data: []);
+        DB::table('incomes')->insert(
+            $data);
+        
     }
 }
+

@@ -13,7 +13,8 @@ class IncomeController extends Controller
     {
         $tableData = [
             'heading' => [
-                'date','category','amount','newCategory'
+main
+            'date','category','amount','newCategory'
             ],
             'data' => [
                 ['12/12/2012','salary','2500',"1"],

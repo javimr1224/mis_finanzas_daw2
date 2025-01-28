@@ -5,7 +5,9 @@ namespace Database\Seeders;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+main
 use Illuminate\Seeders\IncomeSeeder;
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,9 +16,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-            // User::factory(10)->create();
-        // $this->call([           
-        //     IncomeSeeder::class,
-        // ]);
+        // User::factory(10)->create();
+
+        $this->call([
+           IncomeSeeder::class,
+        ]);
     }
 }
