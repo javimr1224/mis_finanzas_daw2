@@ -10,6 +10,7 @@ use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Seeders\IncomeSeeder;
 
+
 class DatabaseSeeder extends Seeder
 {
     /**

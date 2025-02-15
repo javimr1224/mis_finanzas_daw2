@@ -28,8 +28,6 @@ class IncomeController extends Controller
 
     return view('income.index', ['title' => 'My incomes', 'tableData' => $tableData]);
 }
-
-
     /**
      * Show the form for creating a new resource.
      */

@@ -27,7 +27,9 @@ class IncomeSeeder extends Seeder
                 'updated_at' => $now,
             ];
         }
-
-        DB::table("incomes")->insert($data);
+        DB::table('incomes')->insert(
+            $data);
+        
     }
 }
+
