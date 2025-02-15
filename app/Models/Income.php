@@ -9,5 +9,5 @@ class Income extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['date', 'category', 'amount', 'newCategory']; // Columnas que puedes asignar
+    protected $fillable = ['date', 'category', 'amount', 'newCategory']; 
 }

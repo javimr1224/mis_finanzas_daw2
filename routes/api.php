@@ -3,7 +3,6 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\Income;
- main
 
 Route::get('/incomes', function (Request $request) {
     return Income::all();
