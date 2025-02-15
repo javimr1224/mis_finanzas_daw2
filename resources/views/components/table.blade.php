@@ -14,7 +14,7 @@
                 <tr class="{{ $loop->even ? 'bg-white' : 'bg-blue-100' }} border-b">
                     @foreach ($row as $key => $cell)
                         @if ($loop->first)
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap    ">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                 {{$cell}}
                             </th>
                         @else

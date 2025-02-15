@@ -15,12 +15,19 @@ class IncomeSeeder extends Seeder
     {
         $now = now();
         $data = [];
+        $categories = ['Salary', 'Investment', 'Freelance', 'Bonus', 'Gift'];
+        $newCategories = ['Employment', 'Finance', 'Self-employment', 'Other'];
+
         for ($i = 0; $i < 50; $i++) {
             $data[] = [
-                'amount' => rand(50,100),
-                'created_at' => $now 
+                'category' => $categories[array_rand($categories)], // Seleccionar una categoría aleatoria
+                'amount' => rand(50, 100),
+                'newCategory' => $newCategories[array_rand($newCategories)], // Seleccionar una nueva categoría aleatoria
+                'created_at' => $now,
+                'updated_at' => $now,
             ];
         }
-        DB::table("incomes")->insert($data ? $data: []);
+
+        DB::table("incomes")->insert($data);
     }
 }

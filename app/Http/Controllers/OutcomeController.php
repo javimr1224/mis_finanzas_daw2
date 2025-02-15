@@ -3,32 +3,29 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Income;
 
-class IncomeController extends Controller
+class OutcomeController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
-{
-    $incomes = Income::all();
+    // public function index()
+    // {
+    //     $tableData = [
+    //         'heading' => [
+    //             'date','category','amount','newCategory'
+    //         ],
+    //         'data' => [
+    //             ['12/12/2012','salary','2500',"1"],
+    //             ['12/01/2013','salary','2500','2'],
+    //             ['12/02/2013','salary','2550','3']
+    //         ]
 
-    $tableData = [
-        'heading' => ['id', 'category', 'amount', 'newCategory'], 
-        'data' => $incomes->map(function ($income) {
-            return [
-                'id' => $income->id,
-                'category' => $income->category,
-                'amount' => $income->amount,
-                'newCategory' => $income->newCategory
-            ];
-        })->toArray(),
-    ];
-
-    return view('income.index', ['title' => 'My incomes', 'tableData' => $tableData]);
-}
-
+    //     ]; 
+    //     //Aquí la lógica de negocio para el index
+    //     return view('income.index',['title' => 'My outcomes','tableData' => $tableData]);
+        
+    // }
 
     /**
      * Show the form for creating a new resource.
@@ -36,7 +33,7 @@ class IncomeController extends Controller
     public function create()
     {
         //
-        return '<p>Esta es la página del create de incomes</p>';
+        return '<p>Esta es la página del create de outcomes</p>';
     }
 
     /**
@@ -53,7 +50,7 @@ class IncomeController extends Controller
     public function show(string $id)
     {
         //
-        return '<p>Esta es la página del show de incomes</p>';
+        return '<p>Esta es la página del show de outcomes</p>';
     }
 
     /**
@@ -62,7 +59,7 @@ class IncomeController extends Controller
     public function edit(string $id)
     {
         //
-        return '<p>Esta es la página del edit de incomes</p>';
+        return '<p>Esta es la página del edit de outcomes</p>';
     }
 
     /**
