@@ -16,14 +16,6 @@ main
                     @foreach ($row as $key => $cell)
                         @if ($loop->first)
                             <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap    ">
-=======
-                <!-- Alternating row colors between white and light blue -->
-                <tr class="{{ $loop->even ? 'bg-white' : 'bg-blue-50' }} border-b">
-                    @foreach ($row as $key => $cell)
-                        <!-- First column as <th> and others as <td> -->
-                        @if ($loop->first)
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
- main
                                 {{$cell}}
                             </th>
                         @else
