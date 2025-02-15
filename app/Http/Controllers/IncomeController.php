@@ -28,6 +28,9 @@ class IncomeController extends Controller
 
     return view('income.index', ['title' => 'My incomes', 'tableData' => $tableData]);
 }
+>>>>>>>>> Temporary merge branch 2
+
+
     /**
      * Show the form for creating a new resource.
      */

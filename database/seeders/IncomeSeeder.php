@@ -20,16 +20,24 @@ class IncomeSeeder extends Seeder
 
         for ($i = 0; $i < 50; $i++) {
             $data[] = [
-                'category' => $categories[array_rand($categories)], // Seleccionar una categoría aleatoria
+                'category' => $categories[array_rand($categories)], 
                 'amount' => rand(50, 100),
                 'newCategory' => $newCategories[array_rand($newCategories)], // Seleccionar una nueva categoría aleatoria
+>>>>>>>>> Temporary merge branch 2
                 'created_at' => $now,
                 'updated_at' => $now,
             ];
         }
+<<<<<<<<< Temporary merge branch 1
         DB::table('incomes')->insert(
             $data);
         
     }
 }
 
+=========
+
+        DB::table("incomes")->insert($data);
+    }
+}
+>>>>>>>>> Temporary merge branch 2
